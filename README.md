@@ -23,18 +23,12 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 * Get Golang
 * Set Golang Environment Variables
-
 * Set Golang Environment Variables +
 * Write a sample go code
-
 * Get Delve \(Golang Debugger\)
-
 * Get VSCODE
-
 * Open the Sample in Code
-
 * Debugging
-
 * Remote Debugging
 
 ## Get Golang
