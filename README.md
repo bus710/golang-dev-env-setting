@@ -44,15 +44,38 @@ The download link can be different from the latest stable version.
 
 Please check [https://golang.org/dl/](https://golang.org/dl/)
 
-## Set some basic environment variables
+## Set Golang Environment Variables
 
 Add the lines to /etc/profile
 
 ```
-
 export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 export GOPATH=$HOME/golang
+```
+
+And make a directory for packages
+
+```
+$ mkdir $HOME/golang
+$ source /etc/profile
+```
+
+## Set Golang Environment Variables +
+
+If you want to have your own go files in somewhere else other than $HOME/golang/src, 
+
+Add the line below to $HOME/.profile
+
+```
+export GOPATH=$GOPATH:YOUR-GOLANG-PROJECT-PATH 
+```
+
+And make a directory for your project
+
+```
+$ mkdir -p YOUR-GOLANG-PROJECT-PATH/src
+$ source $HOME/.profile
 ```
 
 
