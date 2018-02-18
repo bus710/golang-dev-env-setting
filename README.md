@@ -33,18 +33,27 @@ For x64
 
 $ wget https://dl.google.com/go/go1.10.linux-amd64.tar.gz
 $ sudo tar -xvf go1.10.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
- 
+
 For ARM64
 
 $ wget https://dl.google.com/go/go1.10.linux-arm64.tar.gz
 $ sudo tar -xvf go1.10.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
 ```
 
-The download link can be different from the latest stable version. 
+The download link can be different from the latest stable version.
 
-Please check https://golang.org/dl/
+Please check [https://golang.org/dl/](https://golang.org/dl/)
 
+## Set some basic environment variables
 
+Add the lines to /etc/profile
+
+```
+
+export PATH=$PATH:/usr/local/go/bin
+export GOROOT=/usr/local/go
+export GOPATH=$HOME/golang
+```
 
 
 
