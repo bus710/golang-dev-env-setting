@@ -132,7 +132,7 @@ $ sudo dpkg -i code-*.deb
 $ rm code*
 ```
 
-## Open the Sample in Code
+## Open the Sample in VSCODE
 
 To install some required vscode extensions, run below in the terminal
 
@@ -141,7 +141,7 @@ $ cd YOUR-GOLANG-PROJECT-PATH/src
 $ code .
 ```
 
-Then it will tell you to install vscode-go.
+Then it will tell you to install vscode-go extension.
 
 ## Debugging
 
