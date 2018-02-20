@@ -15,9 +15,9 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Golang Debugging in VSCODE - [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 * Golang Debugging in VSCODE [https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code](https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code)
 * Vim-Delve - [https://github.com/sebdah/vim-delve](https://github.com/sebdah/vim-delve)
-* Vim-Pathogen - https://github.com/tpope/vim-pathogen
-* Vim-Tagbar - https://github.com/majutsushi/tagbar
-* Vim-NerdTree - https://github.com/scrooloose/nerdtree
+* Vim-Pathogen - [https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
+* Vim-Tagbar - [https://github.com/majutsushi/tagbar](https://github.com/majutsushi/tagbar)
+* Vim-NerdTree - [https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
 
 ## Environment
 
@@ -134,6 +134,8 @@ $ go get -u github.com/derekparker/delve/cmd/dlv
 
 ## Code Editing 1 - the Easy Way
 
+VSCODE provides myriad extension packages and visual debugging feature.
+
 ### Get VSCODE
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
@@ -174,11 +176,35 @@ Since we already installed Delve, VSCODE might provide launch.json for its debug
 
 ## Code Editing 2 - the Hard Way
 
-..
+Cannot imagine Golang without Vim.
+
+Neovim would be great but let's use vim here.
 
 ### Get Vim
 
-..
+To install Vim in Ubuntu-like system.
+
+```
+$ sudo apt install vim
+```
+
+Vim configuration can be done by having .vimrc in your home directory.
+
+```
+$ touch $HOME/.vimrc
+```
+
+Also the vimrc file requires few lines of contents.
+
+```
+ execute pathogen#infect()
+ syntax on
+ filetype plugin indent on
+```
+
+However, the execute line invokes error before you actually have Pathogen. 
+
+Put a double quote at front of the line if the error message is too annoying.
 
 ### Get Extensions
 
