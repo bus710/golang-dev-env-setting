@@ -79,6 +79,7 @@ And make a directory for 3rd-party packages
 ```
 $ mkdir -p $HOME/golang/src
 $ source /etc/profile
+$ source $HOME/.profile
 ```
 
 ## Set Golang Environment Variables +
