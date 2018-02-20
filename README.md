@@ -16,6 +16,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Golang Debugging in VSCODE [https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code](https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code)
 * Vim-Delve - [https://github.com/sebdah/vim-delve](https://github.com/sebdah/vim-delve)
 * Vim-Pathogen - [https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
+* Vim-YouCompleteMe - https://github.com/Valloric/YouCompleteMe
 * Vim-Tagbar - [https://github.com/majutsushi/tagbar](https://github.com/majutsushi/tagbar)
 * Vim-NerdTree - [https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
 
@@ -208,7 +209,15 @@ Put a double quote \("\) at the front of the execute line if the error message i
 
 ### Get Extensions
 
-..
+Now we need to install Pathogen, YCM, NerdTree, TagBar, and Vim-Delve
+
+Let's get Pathogen first.
+
+```
+mkdir -p ~/.vim/autoload ~/.vim/bundle
+cd ~/.vim/autoload
+curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
+```
 
 ### Debugging
 
