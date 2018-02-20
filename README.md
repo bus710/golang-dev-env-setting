@@ -40,7 +40,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
   * Remote Debugging
 * Code Editing 2 - the Hard Way
   * Get Vim
-  * Get Extensions
+  * Get Vim Extensions
   * Debugging
   * Remote Debugging
 
@@ -200,7 +200,7 @@ Vim configuration can be done by having .vimrc in your home directory.
 $ touch $HOME/.vimrc
 ```
 
-### Get Extensions
+### Get Vim Extensions
 
 Now we need to install Vim-Go, Vim-Plug, Vim-Delve. YCM, NerdTree, and TagBar.
 
@@ -217,6 +217,8 @@ Put few lines in the vimrc file you made before.
 call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'https://github.com/Shougo/vimshell.vim'
+Plug 'https://github.com/Shougo/vimproc.vim'
 Plug 'sebdah/vim-delve'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer'}
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -231,19 +233,6 @@ Open Vim and type a command as below \(Below Vim commands will install the packa
 :PlugInstall
 ```
 
-~~**YCM**~~
-
-~~This requires Python 2.7.2 or above.~~
-
-```
-$ cd $HOME//.vim/bundle
-$ git clone https://github.com/Valloric/YouCompleteMe.git
-$ cd YouCompleteMe
-$ git submodule update --init --recursive
-$ ./install.sh
-$ ./install.py --go-completer (or --all)
-```
-
 **TagBar **and **NerdTree **Shortcut.
 
 ```
@@ -252,6 +241,8 @@ nmap <C-n> :NERDTreeToggle<CR>
 ```
 
 ### Debugging
+
+...
 
 ### Remote Debugging
 
