@@ -14,12 +14,13 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Delve Installation - [https://github.com/derekparker/delve/blob/master/Documentation/installation/linux/install.md](https://github.com/derekparker/delve/blob/master/Documentation/installation/linux/install.md)
 * Golang Debugging in VSCODE 1 - [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 * Golang Debugging in VSCODE 2 - [https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code](https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code)
-* Vim-Delve - [https://github.com/sebdah/vim-delve](https://github.com/sebdah/vim-delve)
+* Vim-Go - [https://github.com/fatih/vim-go](https://github.com/fatih/vim-go)
+* Vim-Plug - https://github.com/junegunn/vim-plug 
 * Vim-Pathogen - [https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen)
-* Vim-go - [https://github.com/fatih/vim-go](https://github.com/fatih/vim-go)
 * Vim-YouCompleteMe - [https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * Vim-Tagbar - [https://github.com/majutsushi/tagbar](https://github.com/majutsushi/tagbar)
 * Vim-NerdTree - [https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
+* Vim-Delve - [https://github.com/sebdah/vim-delve](https://github.com/sebdah/vim-delve)
 
 ## Environment
 
@@ -201,27 +202,9 @@ $ touch $HOME/.vimrc
 
 ### Get Extensions
 
-Now we need to install Pathogen, Vim-Go, YCM, NerdTree, TagBar, and Vim-Delve.
+Now we need to install Vim-Go, Pathogen, YCM, NerdTree, TagBar, and Vim-Delve.
 
-Let's get **Pathogen** first.
-
-```
-$ mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle
-$ cd $HOME/.vim/autoload
-$ curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
-```
-
-Pathogen needs to be recognized by Vim.
-
-Put few lines in the vimrc file you made before
-
-```
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-```
-
-Then **Vim-go**
+Let's get **Vim-go **first.
 
 ```
 $ cd $HOME/.vim/bundle
@@ -232,6 +215,26 @@ Open Vim and type a command as below.
 
 ```
 :GoInstallBinaries
+```
+
+Then **Vim-Plug**.
+
+~~Then **Pathogen**.~~
+
+```
+$ mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle
+$ cd $HOME/.vim/autoload
+$ curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
+```
+
+~~Pathogen needs to be recognized by Vim.~~
+
+~~Put few lines in the vimrc file you made before~~
+
+```
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
 ```
 
 **YCM**
