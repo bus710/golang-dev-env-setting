@@ -242,6 +242,33 @@ $ ./install.sh
 $ ./install.py --go-completer (or --all)
 ```
 
+**TagBar**
+
+```
+$ sudo apt install ctags
+$ cd ~/.vim/bundle
+$ git clone https://github.com/majutsushi/tagbar.git
+```
+
+Add a line to the vimrc. This sets a keyboard shortcut \(^t\).
+
+```
+nmap <C-t> :TagbarToggle<CR>
+```
+
+**NerdTree**
+
+```
+$ cd ~/.vim/bundle
+$ git clone https://github.com/scrooloose/nerdtree.git
+```
+
+Add a line to the vimrc. This sets a keyboard shortcut \(^n\).
+
+```
+nmap <C-n> :NERDTreeToggle<CR>
+```
+
 
 
 ### Debugging
