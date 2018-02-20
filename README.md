@@ -202,9 +202,7 @@ $ touch $HOME/.vimrc
 
 ### Get Extensions
 
-Now we need to install Vim-Go, Vim-Plug, Vim-Delve. YCM, NerdTree, and TagBar. 
-
-
+Now we need to install Vim-Go, Vim-Plug, Vim-Delve. YCM, NerdTree, and TagBar.
 
 Let's get **Vim-Plug **first.
 
@@ -213,7 +211,7 @@ $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-Put few lines in the vimrc file you made before
+Put few lines in the vimrc file you made before.
 
 ```
 call plug#begin('~/.vim/plugged')
@@ -227,7 +225,7 @@ Plug 'https://github.com/majutsushi/tagbar.git'
 call plug#end()
 ```
 
-Open Vim and type a command as below.
+Open Vim and type a command as below \(Below Vim commands will install the packages as we wrote above\).
 
 ```
 :PlugInstall
@@ -253,8 +251,6 @@ $ ./install.py --go-completer (or --all)
 nmap <C-t> :TagbarToggle<CR>
 nmap <C-n> :NERDTreeToggle<CR>
 ```
-
-
 
 ### Debugging
 
