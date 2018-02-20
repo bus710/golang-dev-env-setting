@@ -198,9 +198,9 @@ $ touch $HOME/.vimrc
 
 ### Get Extensions
 
-Now we need to install Pathogen, YCM, NerdTree, TagBar, and Vim-Delve
+Now we need to install Pathogen, Vim-Go, YCM, NerdTree, TagBar, and Vim-Delve
 
-Let's get Pathogen first.
+Let's get **Pathogen** first.
 
 ```
 $ mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle
@@ -218,11 +218,31 @@ syntax on
 filetype plugin indent on
 ```
 
-Then Vim-go
+Then **Vim-go**
 
 ```
+$ cd $HOME/.vim/bundle
+$ git clone https://github.com/fatih/vim-go.git
+```
+
+Open Vim and type a command as below.
 
 ```
+:GoInstallBinaries
+```
+
+**YCM**
+
+```
+$ cd $HOME//.vim/bundle
+$ git clone https://github.com/Valloric/YouCompleteMe.git
+$ cd YouCompleteMe
+$ git submodule update --init --recursive
+$ ./install.sh
+$ ./install.py --go-completer (or --all)
+```
+
+
 
 ### Debugging
 
