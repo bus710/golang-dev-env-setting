@@ -208,7 +208,7 @@ $ cd $HOME/.vim/autoload
 $ curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
 ```
 
-Pathogen need to be recognized by Vim.
+Pathogen needs to be recognized by Vim.
 
 Put few lines in the vimrc file you made before
 
