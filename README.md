@@ -229,7 +229,6 @@ Open Vim and type a command as below \(Below Vim commands will install the packa
 
 ```
 :PlugInstall
-:GoInstallBinaries
 ```
 
 ~~**YCM**~~
