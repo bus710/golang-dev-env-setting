@@ -26,10 +26,16 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Set Golang Environment Variables +
 * Write a sample go code
 * Get Delve \(Golang Debugger\)
-* Get VSCODE
-* Open the Sample in Code
-* Debugging
-* Remote Debugging
+* Code Editing 1 - Easier Way
+  * Get VSCODE
+  * Open the Sample in Code
+  * Debugging
+  * Remote Debugging
+* Code Editing 2 - Harder Way
+  * Get Vim
+  * Get Extensions
+  * Debugging
+  * Remote Debugging
 
 ## Get Golang
 
@@ -122,7 +128,9 @@ Delve is the best debugger for golang.
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-## Get VSCODE
+## Code Editing 1 - Easier Way
+
+### Get VSCODE
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
@@ -133,7 +141,7 @@ $ sudo dpkg -i code-*.deb
 $ rm code*
 ```
 
-## Open the Sample in VSCODE
+### Open the Sample in VSCODE
 
 To install some required vscode extensions, run below in the terminal
 
@@ -150,11 +158,11 @@ I recommend to install extensions such as:
 * Gopkgs
 * Vim
 
-## Debugging
+### Debugging
 
 Since we already installed Delve, VSCODE might provide launch.json for its debugging mode.
 
-## Remote Debugging
+### Remote Debugging
 
 ...is well explained here.
 
