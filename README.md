@@ -142,7 +142,13 @@ $ cd YOUR-GOLANG-PROJECT-PATH/src
 $ code .
 ```
 
-Then it will tell you to install vscode-go extension.
+Then it will tell you to install extensions. 
+
+I recommend to install extensions such as:
+
+* Go
+* Gopkgs
+* Vim
 
 ## Debugging
 
