@@ -273,9 +273,9 @@ Now we have the minimum setup for Golang in Vim.
 
 ### Debugging
 
-
-
 ### Remote Debugging
 
-..
+Delve server in a target gives a lot of benefit though, I would use ssh client to access to the target and run debugging mode..
+
+
 
