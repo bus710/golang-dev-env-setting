@@ -16,7 +16,6 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Golang Debugging in VSCODE 2 - [https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code](https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code)
 * Vim-Go - [https://github.com/fatih/vim-go](https://github.com/fatih/vim-go)
 * Vim-Plug - [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug) 
-* ~~Vim-Pathogen - ~~\[~~[https://github.com/tpope/vim-pathogen~~\]\(https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen~~]%28https://github.com/tpope/vim-pathogen)\)
 * Vim-YouCompleteMe - [https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * Vim-Tagbar - [https://github.com/majutsushi/tagbar](https://github.com/majutsushi/tagbar)
 * Vim-NerdTree - [https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
@@ -138,7 +137,7 @@ Delve is the best debugger for golang.
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-## Code Editing 1 - the Easy Way
+## Code Editing 1 - the GUI Way
 
 VSCODE provides myriad extension packages and visual debugging feature.
 
@@ -180,7 +179,7 @@ Since we already installed Delve, VSCODE might provide launch.json for its debug
 
 * [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 
-## Code Editing 2 - the Hard Way
+## Code Editing 2 - the Terminal Way
 
 Cannot imagine Golang without Vim.
 
@@ -202,7 +201,7 @@ $ touch $HOME/.vimrc
 
 ### Get Vim Extensions
 
-Now we need to install Vim-Go, Vim-Plug, Vim-Delve. YCM, NerdTree, and TagBar.
+Now we need to install Vim-Plug, Vim-Go, Vim-Delve. YCM, NerdTree, and TagBar.
 
 Let's get **Vim-Plug **first.
 
@@ -227,7 +226,9 @@ Plug 'https://github.com/majutsushi/tagbar.git'
 call plug#end()
 ```
 
-Open Vim and type a command as below \(Below Vim commands will install the packages as we wrote above\).
+Open Vim and type a command as below.
+
+The commands will install the packages as we wrote above.
 
 ```
 :PlugInstall
