@@ -220,7 +220,8 @@ Open Vim and type a command as below.
 Then **Vim-Plug**.
 
 ```
-aa
+$ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
 Put few lines in the vimrc file you made before
