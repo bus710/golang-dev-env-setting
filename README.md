@@ -202,22 +202,11 @@ $ touch $HOME/.vimrc
 
 ### Get Extensions
 
-Now we need to install Vim-Go, Vim-Plug, YCM, NerdTree, TagBar, and Vim-Delve.
+Now we need to install Vim-Go, Vim-Plug, Vim-Delve. YCM, NerdTree, and TagBar. 
 
-Let's get **Vim-go **first.
 
-```
-$ cd $HOME/.vim/bundle
-$ git clone https://github.com/fatih/vim-go.git
-```
 
-Open Vim and type a command as below.
-
-```
-:GoInstallBinaries
-```
-
-Then **Vim-Plug**.
+Let's get **Vim-Plug **first.
 
 ```
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -227,30 +216,27 @@ $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
 Put few lines in the vimrc file you made before
 
 ```
-aa
+call plug#begin('~/.vim/plugged')
+
+Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
+Plug 'sebdah/vim-delve'
+Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer'}
+Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
+Plug 'https://github.com/majutsushi/tagbar.git'
+
+call plug#end()
 ```
 
-~~Then **Pathogen**.~~
+Open Vim and type a command as below.
 
 ```
-$ mkdir -p $HOME/.vim/autoload $HOME/.vim/bundle
-$ cd $HOME/.vim/autoload
-$ curl -LSso pathogen.vim https://tpo.pe/pathogen.vim
+:PlugInstall
+:GoInstallBinaries
 ```
 
-~~Pathogen needs to be recognized by Vim.~~
+~~**YCM**~~
 
-~~Put few lines in the vimrc file you made before~~
-
-```
-execute pathogen#infect()
-syntax on
-filetype plugin indent on
-```
-
-**YCM**
-
-This requires Python 2.7.2 or above.
+~~This requires Python 2.7.2 or above.~~
 
 ```
 $ cd $HOME//.vim/bundle
@@ -261,34 +247,14 @@ $ ./install.sh
 $ ./install.py --go-completer (or --all)
 ```
 
-**TagBar**
-
-```
-$ sudo apt install ctags
-$ cd ~/.vim/bundle
-$ git clone https://github.com/majutsushi/tagbar.git
-```
-
-Add a line to the vimrc. This sets a keyboard shortcut \(^t\).
+**TagBar **and **NerdTree **Shortcut.
 
 ```
 nmap <C-t> :TagbarToggle<CR>
-```
-
-**NerdTree**
-
-```
-$ cd ~/.vim/bundle
-$ git clone https://github.com/scrooloose/nerdtree.git
-```
-
-Add a line to the vimrc. This sets a keyboard shortcut \(^n\).
-
-```
 nmap <C-n> :NERDTreeToggle<CR>
 ```
 
-Now we have the minimum setup for Golang in Vim.
+
 
 ### Debugging
 
