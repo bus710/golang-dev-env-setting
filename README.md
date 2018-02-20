@@ -234,6 +234,8 @@ Open Vim and type a command as below.
 
 **YCM**
 
+This requires Python 2.7.2 or above.
+
 ```
 $ cd $HOME//.vim/bundle
 $ git clone https://github.com/Valloric/YouCompleteMe.git
