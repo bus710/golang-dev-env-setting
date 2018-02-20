@@ -198,7 +198,7 @@ $ touch $HOME/.vimrc
 
 ### Get Extensions
 
-Now we need to install Pathogen, Vim-Go, YCM, NerdTree, TagBar, and Vim-Delve
+Now we need to install Pathogen, Vim-Go, YCM, NerdTree, TagBar, and Vim-Delve.
 
 Let's get **Pathogen** first.
 
@@ -276,6 +276,4 @@ Now we have the minimum setup for Golang in Vim.
 ### Remote Debugging
 
 Delve server in a target gives a lot of benefit though, I would use ssh client to access to the target and run debugging mode..
-
-
 
