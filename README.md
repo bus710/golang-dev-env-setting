@@ -168,5 +168,23 @@ Since we already installed Delve, VSCODE might provide launch.json for its debug
 
 * [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 
+## Code Editing 2 - Harder Way
 
+..
+
+### Get Vim
+
+..
+
+### Get Extensions
+
+..
+
+### Debugging
+
+..
+
+### Remote Debugging
+
+..
 
