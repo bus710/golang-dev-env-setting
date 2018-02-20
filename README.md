@@ -202,9 +202,9 @@ Also the vimrc file requires few lines of contents.
  filetype plugin indent on
 ```
 
-However, the execute line invokes error before you actually have Pathogen. 
+However, the execute line invokes error before you actually have Pathogen.
 
-Put a double quote at front of the line if the error message is too annoying.
+Put a double quote \("\) at the front of the execute line if the error message is too annoying.
 
 ### Get Extensions
 
