@@ -105,6 +105,8 @@ Before to get a debugger and IDE, let's test if the basic setup works.
 
 ```
 $ cd YOUR-GOLANG-PROJECT-PATH/src
+$ mkdir hello
+$ cd hello
 $ touch hello.go
 $ vi hello.go
 ```
