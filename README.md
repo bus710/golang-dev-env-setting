@@ -123,7 +123,7 @@ func main(){
 }
 ```
 
-After the writing is done, run it
+After the writing is done, run it in the terminal.
 
 ```
 go run hello.go
