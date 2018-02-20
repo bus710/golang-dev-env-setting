@@ -16,7 +16,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Golang Debugging in VSCODE 2 - [https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code](https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code)
 * Vim-Go - [https://github.com/fatih/vim-go](https://github.com/fatih/vim-go)
 * Vim-Plug - [https://github.com/junegunn/vim-plug](https://github.com/junegunn/vim-plug) 
-* ~~Vim-Pathogen - ~~[~~https://github.com/tpope/vim-pathogen~~](https://github.com/tpope/vim-pathogen)
+* ~~Vim-Pathogen - ~~\[~~[https://github.com/tpope/vim-pathogen~~\]\(https://github.com/tpope/vim-pathogen](https://github.com/tpope/vim-pathogen~~]%28https://github.com/tpope/vim-pathogen)\)
 * Vim-YouCompleteMe - [https://github.com/Valloric/YouCompleteMe](https://github.com/Valloric/YouCompleteMe)
 * Vim-Tagbar - [https://github.com/majutsushi/tagbar](https://github.com/majutsushi/tagbar)
 * Vim-NerdTree - [https://github.com/scrooloose/nerdtree](https://github.com/scrooloose/nerdtree)
@@ -202,7 +202,7 @@ $ touch $HOME/.vimrc
 
 ### Get Extensions
 
-Now we need to install Vim-Go, Pathogen, YCM, NerdTree, TagBar, and Vim-Delve.
+Now we need to install Vim-Go, Vim-Plug, YCM, NerdTree, TagBar, and Vim-Delve.
 
 Let's get **Vim-go **first.
 
@@ -218,6 +218,16 @@ Open Vim and type a command as below.
 ```
 
 Then **Vim-Plug**.
+
+```
+aa
+```
+
+Put few lines in the vimrc file you made before
+
+```
+aa
+```
 
 ~~Then **Pathogen**.~~
 
