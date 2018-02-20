@@ -269,11 +269,11 @@ Add a line to the vimrc. This sets a keyboard shortcut \(^n\).
 nmap <C-n> :NERDTreeToggle<CR>
 ```
 
-
+Now we have the minimum setup for Golang in Vim.
 
 ### Debugging
 
-..
+
 
 ### Remote Debugging
 
