@@ -44,6 +44,8 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
   * Debugging
   * Remote Debugging
 
+====
+
 ## 1. Basic Setup
 
 ### Get Golang
@@ -214,8 +216,6 @@ nmap <C-n> :NERDTreeToggle<CR>
 ### Remote Debugging
 
 Delve server in a target gives a lot of benefit though, I would use ssh client to access to the target and run debugging mode..
-
-
 
 ## 3. Golang and VSCODE
 
