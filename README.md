@@ -25,6 +25,8 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 * Mint Linux 18.3 64bit \(or equivalent distro\)
 
+---
+
 ## Index
 
 * Basic Setup
