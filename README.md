@@ -165,12 +165,6 @@ To install Vim in Ubuntu-like system.
 $ sudo apt install vim
 ```
 
-Vim configuration can be done by having .vimrc in your home directory.
-
-```
-$ touch $HOME/.vimrc
-```
-
 ### Get Vim Extensions
 
 Now we need to install Vim-Plug, Vim-Go, Vim-Delve. YCM, NerdTree, and TagBar.
@@ -182,7 +176,13 @@ $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-Put few lines in the vimrc file you made before.
+Vim itself and Vim-Plug read configuration from a file - vimrc. 
+
+```
+$ touch $HOME/.vimrc
+```
+
+Put few lines in the vimrc file you just made.
 
 ```
 call plug#begin('~/.vim/plugged')
