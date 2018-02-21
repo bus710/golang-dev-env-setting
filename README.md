@@ -149,6 +149,8 @@ Delve is the best debugger for Golang and this will be used with Vim and VSCODE.
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
+---
+
 ## 2. Golang and Vim
 
 Cannot imagine Golang without Vim.
