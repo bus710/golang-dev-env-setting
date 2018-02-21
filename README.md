@@ -92,10 +92,15 @@ Add the line below to $HOME/.profile
 export GOPATH=$GOPATH:YOUR-GOLANG-PROJECT-PATH
 ```
 
-And make a directory for your project
+And make a directory for your project.
 
 ```
 $ mkdir -p YOUR-GOLANG-PROJECT-PATH/src
+```
+
+Also apply the change of your profile.
+
+```
 $ source $HOME/.profile
 ```
 
