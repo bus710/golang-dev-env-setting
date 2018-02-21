@@ -223,7 +223,19 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 ### Debugging
 
-...
+There are two different kind of commands.
+
+**One for Vim-Delve.** 
+
+In Vim, we can use "DlvAddBreakPoint", "DlvClear", "DlvDebug", and so on...
+
+Those can be used to set break and trace points.
+
+**One for Delve.**
+
+In Vim you can type "DlvDebug" and then VimShell window show you **\(dlv\)** prompt.
+
+With \(dlv\) prompt we can use "print", "restart", "continue", "next", and so on...
 
 ### Remote Debugging
 
