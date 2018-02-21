@@ -172,7 +172,7 @@ Now we need to install Vim-Plug, Vim-Go, Vim-Delve. YCM, NerdTree, and TagBar.
 Let's get **Vim-Plug **first.
 
 ```
-$ mkdir $HOME/.vim
+$ mkdir $HOME/.vim/autoload
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
@@ -189,12 +189,12 @@ Put few lines in the vimrc file you just made.
 call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
-Plug 'https://github.com/Shougo/vimshell.vim'
-Plug 'https://github.com/Shougo/vimproc.vim'
+Plug 'Shougo/vimshell.vim'
+Plug 'Shougo/vimproc.vim', P 'do', 'make' }
 Plug 'sebdah/vim-delve'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer'}
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'https://github.com/majutsushi/tagbar.git'
+Plug 'majutsushi/tagbar.git'
 
 call plug#end()
 ```
