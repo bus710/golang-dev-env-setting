@@ -32,17 +32,16 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Set Golang Environment Variables +
 * Write a sample go code
 * Get Delve \(Golang Debugger\)
-
 * IDE 1 - the Terminal Way
   * Get Vim
   * Get Vim Extensions
   * Debugging
   * Remote Debugging
 * IDE 2 - the GUI Way
-  * * Get VSCODE
-    * Open the Sample in Code
-    * Debugging
-    * Remote Debugging
+* * Get VSCODE
+  * Open the Sample in Code
+  * Debugging
+  * Remote Debugging
 
 ## Get Golang
 
@@ -132,55 +131,13 @@ go run hello.go
 
 ## Get Delve \(Golang Debugger\)
 
-Delve is the best debugger for golang.
+Delve is the best debugger for Golang and this will be used with Vim and VSCODE.
 
 ```
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-## IDE 1 - the GUI Way
-
-VSCODE provides myriad extension packages and visual debugging feature.
-
-### Get VSCODE
-
-[https://code.visualstudio.com/](https://code.visualstudio.com/)
-
-Just download the deb file and run the below command.
-
-```
-$ sudo dpkg -i code-*.deb 
-$ rm code*
-```
-
-### Open the Sample in VSCODE
-
-To install some required vscode extensions, run below in the terminal
-
-```
-$ cd YOUR-GOLANG-PROJECT-PATH/src
-$ code .
-```
-
-Then it will tell you to install extensions.
-
-I recommend to install extensions such as:
-
-* Go
-* Gopkgs
-* Vim
-
-### Debugging
-
-Since we already installed Delve, VSCODE might provide launch.json for its debugging mode.
-
-### Remote Debugging
-
-...is well explained here.
-
-* [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
-
-## IDE 2 - the Terminal Way
+## IDE 1 - the Terminal Way
 
 Cannot imagine Golang without Vim.
 
@@ -249,4 +206,50 @@ nmap <C-n> :NERDTreeToggle<CR>
 ### Remote Debugging
 
 Delve server in a target gives a lot of benefit though, I would use ssh client to access to the target and run debugging mode..
+
+## IDE 2 - the GUI Way
+
+VSCODE provides myriad extension packages and visual debugging feature.
+
+### Get VSCODE
+
+[https://code.visualstudio.com/](https://code.visualstudio.com/)
+
+Just download the deb file and run the below command.
+
+```
+$ sudo dpkg -i code-*.deb 
+$ rm code*
+```
+
+### Open the Sample in VSCODE
+
+To install some required vscode extensions, run below in the terminal
+
+```
+$ cd YOUR-GOLANG-PROJECT-PATH/src
+$ code .
+```
+
+Then it will tell you to install extensions.
+
+I recommend to install extensions such as:
+
+* Go
+* Gopkgs
+* Vim
+
+### Debugging
+
+Since we already installed Delve, VSCODE might provide launch.json for its debugging mode.
+
+### Remote Debugging
+
+...is well explained here.
+
+* [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
+
+## 
+
+
 
