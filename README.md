@@ -225,7 +225,7 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 There are two different kind of commands.
 
-**One for Vim-Delve.** 
+**One for Vim-Delve.**
 
 In Vim, we can use "DlvAddBreakPoint", "DlvClear", "DlvDebug", and so on...
 
@@ -236,6 +236,10 @@ Those can be used to set break and trace points.
 In Vim you can type "DlvDebug" and then VimShell window show you **\(dlv\)** prompt.
 
 With \(dlv\) prompt we can use "print", "restart", "continue", "next", and so on...
+
+To find out the usage of Delve, please check the below link.
+
+https://blog.gopheracademy.com/advent-2015/debugging-with-delve/
 
 ### Remote Debugging
 
