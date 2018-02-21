@@ -152,9 +152,9 @@ Delve is the best debugger for Golang and this will be used with Vim and VSCODE.
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-The main command - dlv is probably located in $HOME/golang/bin.
+The main command - **dlv** is probably located in $HOME/golang/bin.
 
-To run the command, you need to source /etc/profile or just re-login.
+If your shell cannot find 'dlv' command, you need to source /etc/profile or just re-login.
 
 ---
 
