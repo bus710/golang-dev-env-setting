@@ -172,11 +172,12 @@ Now we need to install Vim-Plug, Vim-Go, Vim-Delve. YCM, NerdTree, and TagBar.
 Let's get **Vim-Plug **first.
 
 ```
+$ mkdir $HOME/.vim
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
 
-Vim itself and Vim-Plug read configuration from a file - vimrc. 
+Vim itself and Vim-Plug read configuration from a file - vimrc.
 
 ```
 $ touch $HOME/.vimrc
