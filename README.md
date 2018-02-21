@@ -299,5 +299,5 @@ We saw the simple process to have Golang SDK and development tools.
 
 Now you are a gopher!
 
-![](/assets/gopher2.png)
+![](/assets/gopher3.png)
 
