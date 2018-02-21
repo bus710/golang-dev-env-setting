@@ -237,9 +237,11 @@ In Vim you can type "DlvDebug" and then VimShell window show you **\(dlv\)** pro
 
 With \(dlv\) prompt we can use "print", "restart", "continue", "next", and so on...
 
+**Usage**
+
 To find out the usage of Delve, please check the below link.
 
-https://blog.gopheracademy.com/advent-2015/debugging-with-delve/
+[https://blog.gopheracademy.com/advent-2015/debugging-with-delve/](https://blog.gopheracademy.com/advent-2015/debugging-with-delve/)
 
 ### Remote Debugging
 
@@ -289,7 +291,13 @@ Since we already installed Delve, VSCODE might provide launch.json for its debug
 
 * [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 
-## 
+---
 
+## Conclusion
 
+We saw the simple process to have Golang SDK and development tools.
+
+Now you are a gopher!
+
+![](/assets/gopher.png)
 
