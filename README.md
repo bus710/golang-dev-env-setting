@@ -239,7 +239,9 @@ With \(dlv\) prompt we can use "print", "restart", "continue", "next", and so on
 
 **Usage**
 
-To find out the usage of Delve, please check the below link.
+To find out the usage of Delve, please check the below links.
+
+https://github.com/derekparker/delve/tree/master/Documentation/cli
 
 [https://blog.gopheracademy.com/advent-2015/debugging-with-delve/](https://blog.gopheracademy.com/advent-2015/debugging-with-delve/)
 
