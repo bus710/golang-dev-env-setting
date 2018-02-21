@@ -27,23 +27,26 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 ## Index
 
-* Get Golang
-* Set Golang Environment Variables
-* Set Golang Environment Variables +
-* Write a sample go code
-* Get Delve \(Golang Debugger\)
-* IDE 1 - the Terminal Way
+* Basic Setup
+  * Get Golang
+  * Set Golang Environment Variables
+  * Set Golang Environment Variables +
+  * Write a sample go code
+  * Get Delve \(Golang Debugger\)
+* Golang and Vim
   * Get Vim
   * Get Vim Extensions
   * Debugging
   * Remote Debugging
-* IDE 2 - the GUI Way
+* Golang and VSCODE
 * * Get VSCODE
   * Open the Sample in Code
   * Debugging
   * Remote Debugging
 
-## Get Golang
+## 1. Basic Setup
+
+### Get Golang
 
 ```
 $ sudo mkdir -p /usr/local/go
@@ -63,7 +66,7 @@ The download link can be different from the latest stable version.
 
 Please check [https://golang.org/dl/](https://golang.org/dl/)
 
-## Set Golang Environment Variables
+### Set Golang Environment Variables
 
 Add the lines to /etc/profile
 
@@ -82,7 +85,7 @@ $ source /etc/profile
 $ source $HOME/.profile
 ```
 
-## Set Golang Environment Variables +
+### Set Golang Environment Variables +
 
 If you want to have your own go files in somewhere else other than $HOME/golang/src,
 
@@ -104,7 +107,7 @@ Also apply the change of your profile.
 $ source $HOME/.profile
 ```
 
-## Write a sample go code
+### Write a sample go code
 
 Before to get a debugger and IDE, let's test if the basic setup works.
 
@@ -134,7 +137,7 @@ After the writing is done, run it in the terminal.
 go run hello.go
 ```
 
-## Get Delve \(Golang Debugger\)
+### Get Delve \(Golang Debugger\)
 
 Delve is the best debugger for Golang and this will be used with Vim and VSCODE.
 
@@ -142,7 +145,7 @@ Delve is the best debugger for Golang and this will be used with Vim and VSCODE.
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-## IDE 1 - the Terminal Way
+## 2. Golang and Vim
 
 Cannot imagine Golang without Vim.
 
@@ -212,7 +215,9 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 Delve server in a target gives a lot of benefit though, I would use ssh client to access to the target and run debugging mode..
 
-## IDE 2 - the GUI Way
+
+
+## 3. Golang and VSCODE
 
 VSCODE provides myriad extension packages and visual debugging feature.
 
