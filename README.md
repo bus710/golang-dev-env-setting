@@ -44,7 +44,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
   * Debugging
   * Remote Debugging
 
-====
+---
 
 ## 1. Basic Setup
 
