@@ -201,7 +201,7 @@ Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'sebdah/vim-delve'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer'}
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
-Plug 'majutsushi/tagbar.git'
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 ```
