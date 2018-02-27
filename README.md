@@ -197,7 +197,7 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'fatih/vim-go', { 'do': ':GoInstallBinaries' }
 Plug 'Shougo/vimshell.vim'
-Plug 'Shougo/vimproc.vim', { 'do', 'make' }
+Plug 'Shougo/vimproc.vim', { 'do': 'make' }
 Plug 'sebdah/vim-delve'
 Plug 'Valloric/YouCompleteMe', { 'do': './install.py --go-completer'}
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
