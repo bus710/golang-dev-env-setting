@@ -99,7 +99,8 @@ If you want to have your own go files in somewhere else other than $HOME/golang/
 Add the line below to $HOME/.profile
 
 ```
-export GOPATH=$GOPATH:YOUR-GOLANG-PROJECT-PATH/bin
+export GOBIN=YOUR-GOLANG-WORK-SPACE/bin
+export GOPATH=$GOPATH:$GOBIN
 ```
 
 And make a directory for your project.
