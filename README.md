@@ -94,25 +94,24 @@ $ source $HOME/.profile
 
 ### Set Golang Environment Variables +
 
-If you want to have your own go files in somewhere else other than $HOME/golang/src,
+If you want to have your own go files in somewhere else other than $HOME/golang/bin,
 
-Add the line below to $HOME/.profile
+Add the line below to $HOME/.bashrc 
 
 ```
-export GOBIN=YOUR-GOLANG-WORK-SPACE/bin
-export GOPATH=$GOPATH:$GOBIN
+export GOPATH=$GOPATH:YOUR-GOLANG-WORK-SPACE/bin
 ```
 
 And make a directory for your project.
 
 ```
-$ mkdir -p YOUR-GOLANG-PROJECT-PATH/src
+$ mkdir -p YOUR-GOLANG-WORK-SPACE/src
 ```
 
 Also apply the change of your profile.
 
 ```
-$ source $HOME/.profile
+$ source $HOME/.bashrc
 ```
 
 ### Write a sample go code
@@ -120,7 +119,7 @@ $ source $HOME/.profile
 Before to get a debugger and IDE, let's test if the basic setup works.
 
 ```
-$ cd YOUR-GOLANG-PROJECT-PATH/src
+$ cd YOUR-GOLANG-WORK-SPACE/src
 $ mkdir hello
 $ cd hello
 $ touch hello.go
