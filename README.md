@@ -80,8 +80,10 @@ export PATH=$PATH:/usr/local/go/bin
 export GOROOT=/usr/local/go
 export PATH=$PATH:$GOROOT/bin
 
-export GOPATH=$HOME/golang/bin
+export GOPATH=$HOME/golang
 export PATH=$PATH:$GOPATH
+
+export GOBIN=$HOME/golang/bin
 ```
 
 And make a directory for 3rd-party packages
@@ -94,18 +96,19 @@ $ source $HOME/.profile
 
 ### Set Golang Environment Variables +
 
-If you want to have your own go files in somewhere else other than $HOME/golang/bin,
+If you want to have your own go files in somewhere else other than $HOME/golang,
 
-Add the line below to $HOME/.bashrc 
+Add the line below to $HOME/.bashrc
 
 ```
-export GOPATH=$GOPATH:YOUR-GOLANG-WORK-SPACE/bin
+export GOPATH=$GOPATH:YOUR-GOLANG-WORK-SPACE
 ```
 
 And make a directory for your project.
 
 ```
 $ mkdir -p YOUR-GOLANG-WORK-SPACE/src
+$ mkdir -p YOUR-GOLANG-WORK-SPACE/bin
 ```
 
 Also apply the change of your profile.
