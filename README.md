@@ -78,12 +78,10 @@ Add the lines to /etc/profile
 export PATH=$PATH:/usr/local/go/bin
 
 export GOROOT=/usr/local/go
-export PATH=$PATH:$GOROOT/bin
+export GOBIN=$PATH:$GOROOT/bin
 
 export GOPATH=$HOME/golang
-export PATH=$PATH:$GOPATH
-
-export GOBIN=$HOME/golang/bin
+export GOBIN=$GOBIN:$HOME/golang/bin
 ```
 
 And make a directory for 3rd-party packages
