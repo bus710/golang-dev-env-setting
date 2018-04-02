@@ -87,9 +87,7 @@ export GOBIN=$GOBIN:$HOME/golang/bin
 And make a directory for 3rd-party packages
 
 ```
-$ mkdir -p $HOME/golang/src
 $ source /etc/profile
-$ source $HOME/.profile
 ```
 
 ### Set Golang Environment Variables +
@@ -99,7 +97,9 @@ If you want to have your own go files in somewhere else other than $HOME/golang,
 Add the line below to $HOME/.bashrc
 
 ```
-export GOPATH=$GOPATH:YOUR-GOLANG-WORK-SPACE
+export GOPATH=$GOPATH:YOUR-GOLANG-WORK-SPACE 
+
+(i.e. export GOPATH=$GOPATH:$HOME/golang)
 ```
 
 And make a directory for your project.
@@ -150,6 +150,7 @@ go run hello.go
 Delve is the best debugger for Golang and this will be used with Vim and VSCODE.
 
 ```
+$ cd $HOME/golang
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
