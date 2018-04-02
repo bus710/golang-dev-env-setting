@@ -76,12 +76,7 @@ Add the lines to /etc/profile
 
 ```
 export PATH=$PATH:/usr/local/go/bin
-
-export GOROOT=/usr/local/go
-export GOBIN=$PATH:$GOROOT/bin
-
 export GOPATH=$HOME/golang
-export GOBIN=$GOBIN:$HOME/golang/bin
 ```
 
 And make a directory for 3rd-party packages
@@ -99,7 +94,7 @@ Add the line below to $HOME/.bashrc
 ```
 export GOPATH=$GOPATH:YOUR-GOLANG-WORK-SPACE 
 
-(i.e. export GOPATH=$GOPATH:$HOME/golang)
+(i.e. export GOPATH=$GOPATH:$HOME/Dropbox/01_repo/gows)
 ```
 
 And make a directory for your project.
