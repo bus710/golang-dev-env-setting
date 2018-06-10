@@ -72,7 +72,7 @@ Please check [https://golang.org/dl/](https://golang.org/dl/)
 
 ### Set Golang Environment Variables
 
-Add the lines to /etc/profile
+Add the lines to $HOME/.bashrc
 
 ```
 export PATH=$PATH:/usr/local/go/bin
