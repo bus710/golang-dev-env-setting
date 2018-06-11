@@ -298,9 +298,9 @@ Now you are a gopher!
 
 ![](/assets/gopher3.png)
   
-  
-  
-  
+.  
+.  
+.  
   
   
 ## Hold On!
@@ -373,7 +373,8 @@ Finally, install golang-qt
 ```
 $GOPATH/bin/qtsetup
 ```
-  
+
+## The real end
 I believe now you are ready to make a GUI app based on Golang and Qt.
 Have fun!
   
