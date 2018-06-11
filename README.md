@@ -309,7 +309,7 @@ Hold On!
   
 After I wrote the main part, I started working on Qt stuff.
 
-Big thanks for *therecipe* who is the golang-qt project's leader (or owner).
+Big thanks for *therecipe* who is the golang-qt project's maintainer.
 
 You can find the detail about the project from below links
 - https://www.ics.com/blog/getting-started-qt-and-qt-creator-linux
