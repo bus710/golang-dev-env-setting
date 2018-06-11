@@ -41,10 +41,15 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
   * Debugging
   * Remote Debugging
 * Golang and VSCODE
-* * Get VSCODE
+  * Get VSCODE
   * Open the Sample in Code
   * Debugging
   * Remote Debugging
+* Conclusion
+* Golang and Qt
+  * How to install Qt framwork
+  * How to install Golang-Qt project
+* Finish
 
 ---
 
