@@ -373,7 +373,8 @@ Then download golang-qt package.
 Finally, install golang-qt
   
 ```
-$GOPATH/bin/qtsetup
+# cd 
+# ./golang/bin/qtsetup
 ```
 
 ## Finish
