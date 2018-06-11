@@ -344,7 +344,7 @@ Of course run it to install Qt framework but,
 # ./Download/qt-unified-*.run
 ```
   
-### How to install golang-Qt project
+### How to install Golang-Qt project
   
 Set up some environment variables in your *bashrc*.
   
@@ -364,13 +364,13 @@ Don't forget run below command to activate the variables.
 # source $HOME/.bashrc
 ```
 
-Then download golang-qt package.
+Then download Golang-Qt package.
 
 ```
 # go get -u -v github.com/therecipe/qt/cmd/...
 ```
   
-Finally, install golang-qt
+Finally, install Golang-Qt
   
 ```
 # cd 
