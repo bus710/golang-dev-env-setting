@@ -303,7 +303,9 @@ Now you are a gopher!
 .  
   
   
-## Hold On!
+## 4. Golang and Qt
+
+Hold On!
   
 After I wrote the main part, I started working on Qt stuff.
 
@@ -374,7 +376,7 @@ Finally, install golang-qt
 $GOPATH/bin/qtsetup
 ```
 
-## The real end
+## Finish
 I believe now you are ready to make a GUI app based on Golang and Qt.
 Have fun!
   
