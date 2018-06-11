@@ -298,9 +298,14 @@ Now you are a gopher!
 
 ![](/assets/gopher3.png)
   
+  
+  
+  
+  
+  
 ## Hold On!
   
-After I wrote about the main part, I started working on Qt stuff.
+After I wrote the main part, I started working on Qt stuff.
 
 Big thanks for *therecipe* who is the golang-qt project's leader (or owner).
 
@@ -368,3 +373,7 @@ Finally, install golang-qt
 ```
 $GOPATH/bin/qtsetup
 ```
+  
+I believe now you are ready to make a GUI app based on Golang and Qt.
+Have fun!
+  
