@@ -320,7 +320,7 @@ First of all, install the required packages.
 $ sudo apt-get -y install build-essential libglu1-mesa-dev libpulse-dev libglib2.0-dev
 ```
 
-Then download a script from Qt.
+Then download a script from Qt.  
 https://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
 
 Set the execution flag for it.
@@ -333,7 +333,8 @@ Of course run it to install Qt framework but,
 - install at $HOME/Qt
   
 ```
-./Download/qt-unified-*.run
+# cd
+# ./Download/qt-unified-*.run
 ```
   
 ## How to install golang-Qt project
