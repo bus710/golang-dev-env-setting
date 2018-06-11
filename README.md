@@ -319,7 +319,7 @@ You can find the detail about the project from below links
 
 And I just want to write how to install the golang-qt project.
 
-## How to install Qt framwork
+### How to install Qt framwork
 
 First of all, install the required packages.
 
@@ -344,7 +344,7 @@ Of course run it to install Qt framework but,
 # ./Download/qt-unified-*.run
 ```
   
-## How to install golang-Qt project
+### How to install golang-Qt project
   
 Set up some environment variables in your *bashrc*.
   
