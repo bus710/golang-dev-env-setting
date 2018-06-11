@@ -297,4 +297,73 @@ We saw the simple process to have Golang SDK and development tools.
 Now you are a gopher!
 
 ![](/assets/gopher3.png)
+  
+## Hold On!
+  
+After I wrote about the main part, I started working on Qt stuff.
 
+Big thanks for *therecipe* who is the golang-qt project's leader (or owner).
+
+You can find the detail about the project from below links
+- https://www.ics.com/blog/getting-started-qt-and-qt-creator-linux
+- https://github.com/therecipe/qt/wiki/Installation
+- https://github.com/therecipe/qt/wiki/Installation-on-Linux
+- https://github.com/therecipe/qt/issues/628
+
+And I just want to write how to install the golang-qt project.
+
+## How to install Qt framwork
+
+First of all, install the required packages.
+
+```
+$ sudo apt-get -y install build-essential libglu1-mesa-dev libpulse-dev libglib2.0-dev
+```
+
+Then download a script from Qt.
+https://download.qt.io/official_releases/online_installers/qt-unified-linux-x64-online.run
+
+Set the execution flag for it.
+```
+# chmod 744 ~/Download/qt-unified-*.run
+```
+
+Of course run it to install Qt framework but,
+- pick Qt 5.10.1 since as of 06/10/2018, Qt 5.11.0 doesn't work with this package.
+- install at $HOME/Qt
+  
+```
+./Download/qt-unified-*.run
+```
+  
+## How to install golang-Qt project
+  
+Set up some environment variables in your *bashrc*.
+  
+```
+export CGO_CXXFLAGS_ALLOW=".*"
+export CGO_LDFLAGS_ALLOW=".*"
+export CGO_CFLAGS_ALLOW=".*"
+
+export QT_DIR=$HOME/Qt
+export QT_VERSION=5.10.1
+export QT_QMAKE_DIR=$HOME/Qt/5.10.1/gcc_64/bin
+```
+
+Don't forget run below command to activate the variables.
+  
+```
+# source $HOME/.bashrc
+```
+
+Then download golang-qt package.
+
+```
+# go get -u -v github.com/therecipe/qt/cmd/...
+```
+  
+Finally, install golang-qt
+  
+```
+$GOPATH/bin/qtsetup
+```
