@@ -378,6 +378,6 @@ Finally, install golang-qt
 ```
 
 ## Finish
-I believe now you are ready to make a GUI app based on Golang and Qt.
+I believe now you are ready to make a GUI app based on Golang and Qt.  
 Have fun!
   
