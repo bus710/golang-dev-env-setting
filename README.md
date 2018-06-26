@@ -45,6 +45,9 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
   * Open the Sample in Code
   * Debugging
   * Remote Debugging
+* Goland
+  * Get Goland
+  * Get Dep
 * Conclusion
 * Golang and Qt
   * How to install Qt framwork
@@ -294,6 +297,17 @@ Since we already installed Delve, VSCODE might provide launch.json for its debug
 * [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 
 ---
+## 4. Goland  
+  
+### Get Goland
+
+..   
+  
+### Get Dep
+  
+..
+    
+---
 
 ## Conclusion
 
@@ -308,7 +322,7 @@ Now you are a gopher!
 .  
   
 ---  
-## 4. Golang and Qt
+## 5. Golang and Qt
 
 Hold On!
   
