@@ -87,7 +87,7 @@ export GOPATH=$HOME/golang
 And make a directory for 3rd-party packages
 
 ```
-$ source /etc/profile
+$ source $HOME/.bashrc
 ```
 
 ### Set Golang Environment Variables +
