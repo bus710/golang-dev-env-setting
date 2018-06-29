@@ -157,7 +157,7 @@ $ cd $HOME/golang
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-The main command - **dlv** is probably located in $HOME/golang/bin.
+The main command - *dlv* is probably located in $HOME/golang/bin.
 
 If your shell cannot find 'dlv' command, you need to source /etc/profile or just re-login.
 
@@ -181,7 +181,7 @@ $ sudo apt install vim
 
 Now we need to install Vim-Plug, Vim-Go, Vim-Delve. YCM, NerdTree, and TagBar.
 
-Let's get **Vim-Plug **first.
+Let's get *Vim-Plug* first.
 
 ```
 $ curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
@@ -218,7 +218,7 @@ The commands will install the packages as we wrote above.
 :PlugInstall
 ```
 
-**TagBar **and **NerdTree **Shortcut.
+*TagBar* and *NerdTree* Shortcut.
 
 ```
 nmap <C-t> :TagbarToggle<CR>
@@ -229,19 +229,19 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 There are two different kind of commands.
 
-**One for Vim-Delve.**
+*One for Vim-Delve.*
 
 In Vim, we can use "DlvAddBreakPoint", "DlvClear", "DlvDebug", and so on...
 
 Those can be used to set break and trace points.
 
-**One for Delve.**
+*One for Delve.*
 
 In Vim you can type "DlvDebug" and then VimShell window show you **\(dlv\)** prompt.
 
 With \(dlv\) prompt we can use "print", "restart", "continue", "next", and so on...
 
-**Usage**
+*Usage*
 
 To find out the usage of Delve, please check the below links.
 
