@@ -331,6 +331,12 @@ You can install dep with below command:
 ...Sorry I am too lazy to capture all the screenshots and paste here.  
 I believe you can figure it out.   
   
+Just couple tips:
+- Add a environment variable - GOROOT to point Golang's path in your **.bashrc** like GOPATH (export GOROOT=/usr/local/go/)
+- If you want to make a Dep-based projext in GoLand, you should also point where Dep is. If you already installed it, it is **$GOPATH/bin/dep**.   
+
+Ok, now you are really ready to start with GoLand!  
+  
 ---
 
 ## Conclusion
