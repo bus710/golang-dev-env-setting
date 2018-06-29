@@ -157,7 +157,7 @@ $ cd $HOME/golang
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-The main command - *dlv* is probably located in $HOME/golang/bin.
+The main command - **dlv** is probably located in $HOME/golang/bin.
 
 If your shell cannot find 'dlv' command, you need to source /etc/profile or just re-login.
 
@@ -218,7 +218,7 @@ The commands will install the packages as we wrote above.
 :PlugInstall
 ```
 
-*TagBar* and *NerdTree* Shortcut.
+**TagBar** and **NerdTree** Shortcut.
 
 ```
 nmap <C-t> :TagbarToggle<CR>
@@ -229,19 +229,19 @@ nmap <C-n> :NERDTreeToggle<CR>
 
 There are two different kind of commands.
 
-*One for Vim-Delve.*
+**One for Vim-Delve.**
 
 In Vim, we can use "DlvAddBreakPoint", "DlvClear", "DlvDebug", and so on...
 
 Those can be used to set break and trace points.
 
-*One for Delve.*
+**One for Delve.**
 
 In Vim you can type "DlvDebug" and then VimShell window show you **\(dlv\)** prompt.
 
 With \(dlv\) prompt we can use "print", "restart", "continue", "next", and so on...
 
-*Usage*
+**Usage**
 
 To find out the usage of Delve, please check the below links.
 
@@ -299,14 +299,38 @@ Since we already installed Delve, VSCODE might provide launch.json for its debug
 ---
 ## 4. Goland  
   
+GoLand is JetBrain's Golang exclusive IDE. 
+As we know JetBrain offers the best tech and service in that market so that I would recommend to pick this for high productivity without too much effort in dev-env setting (with $$$...)   
+  
 ### Get Goland
 
-..   
+It is easy enough to download and install.  
   
+First, go to their websize:  
+https://www.jetbrains.com/help/go/install-and-set-up-product.html
+  
+Next, download the **GoLand-YYYY.V.V.tar.gz** file from them and extract, then the **goland.sh** is under the bin directory.    
+  
+Of course you can run GoLand by calling it from your terminal.
+  
+...but, wait a second! Let's get Dep first.  
+    
 ### Get Dep
   
-..
-    
+Dep is Golang's official dependency manager.  
+- Why not **go get**?, this is because we can pick a certain version of a package like NPM or PIP.  
+- Also GoLand provides dep-based project management.  
+  
+You can install dep with below command:  
+```  
+# curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
+```
+  
+### Start a new go project
+  
+...Sorry I am too lazy to capture all the screenshots and paste here.  
+I believe you can figure it out.   
+  
 ---
 
 ## Conclusion
