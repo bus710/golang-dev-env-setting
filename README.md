@@ -328,7 +328,7 @@ You can install dep with below command:
   
 ### Start a new go project
   
-...Sorry I am too lazy to capture all the screenshots and paste here.  
+...Sorry I am too lazy to capture and paste all the screenshots here.  
 I believe you can figure it out.   
   
 Just couple tips:
