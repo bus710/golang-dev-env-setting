@@ -12,8 +12,9 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Go modules - [https://github.com/golang/go/wiki/Modules#quick-start](https://github.com/golang/go/wiki/Modules#quick-start)
 * Delve Installation - [https://github.com/derekparker/delve/blob/master/Documentation/installation/linux/install.md](https://github.com/derekparker/delve/blob/master/Documentation/installation/linux/install.md)
 * Golang and VSCODE - [https://code.visualstudio.com/docs/languages/go](https://code.visualstudio.com/docs/languages/go)
-* Golang Debugging in VSCODE 1 - [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
-* Golang Debugging in VSCODE 2 - [https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code](https://stackoverflow.com/questions/39058823/how-to-use-delve-debugger-in-visual-studio-code)
+* Golang Debugging in VSCODE - [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
+* Vscode-go - [https://github.com/Microsoft/vscode-go](https://github.com/Microsoft/vscode-go)
+* A comprehensive guide for debugging - [https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code](https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code)
 
 ## Environment
 
@@ -31,7 +32,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Golang and VSCODE
   * Get VSCODE
   * Open the Sample in Code
-  * Config for Debugging
+  * Config for Building and Debugging
 * Conclusion
 
 ---
@@ -165,19 +166,84 @@ Then it will tell you to install extensions.
 I recommend to install extensions such as:
 
 * Go
-* Gopkgs
 * Vim
 * Themes you want (zxx light and dracula in my case)
 
-### Config for Debugging
+:exclamation: Also on the right-bottom corner you may see a notification that ask you to install analysis tools. If you click it and click the yes button, VSCODE will install the required tools such as:  
+* gocode 
+* gopkgs
+* go-outline
+* ...and so on.
 
+### Config for Building in VSCODE
 
+To build a go package by using VSCODE, we should make a tasks.json file.
+
+To generate a tasks.json,
+
+- Press **CTRL+Shift+P**.
+- Then type **task**.
+- Click **Tasks: Configure Task**.
+- Replace the contents of **tasks.json** under .vscode as below.
+
+```
+{
+	"version": "2.0.0",	
+	"type": "shell",	
+	"echoCommand": true,
+	"cwd": "${workspaceFolder}",
+	"tasks": [
+		{
+			"label": "Build and Run",
+			"command": "go build && ./hello",
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			}
+		},		
+	]
+}
+```
+
+With this configuration, you can build and run by typing **CTRL+Shift+B**.
  
+### Config for Debugging in VSCODE
+
+It is almost same as above.  
+To debug a go application by using VSCODE, we should make a launch.json file.  
+
+To generate a launch.json,  
+  
+- Press **CTRL+Shift+P**.
+- Then type **launch**.
+- Click **Debug: Open Launch.json**.
+- A following dialog will give you couple of options. Then click "Go".
+- VSCODE will generate below configuration for you.
+
+```
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch",
+            "type": "go",
+            "request": "launch",
+            "mode": "auto",
+            "program": "${fileDirname}",
+            "env": {},
+            "args": []
+        }
+    ]
+}
+```
+
+With this configuration, you can debug by typing **F5**.
+
 ---
 
 ## Conclusion
 
-We just followed the simple procedure to have Golang SDK and development tools so that it is matter of time to make a simple but yet powerful Go application. 
+We just followed the simple procedure to have Golang SDK and development tools so that it is the matter of time to make simple but yet powerful Go application. 
 
 Now you are a gopher!
 
