@@ -14,7 +14,10 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Golang and VSCODE - [https://code.visualstudio.com/docs/languages/go](https://code.visualstudio.com/docs/languages/go)
 * Golang Debugging in VSCODE - [https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code](https://github.com/Microsoft/vscode-go/wiki/Debugging-Go-code-using-VS-Code)
 * Vscode-go - [https://github.com/Microsoft/vscode-go](https://github.com/Microsoft/vscode-go)
-* A comprehensive guide for debugging - [https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code](https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code)
+* A comprehensive guide for debugging 1 - [https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code](https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code)
+* A comprehensive guide for debugging 2 - [https://robertbasic.com/blog/build-and-run-golang-projects-in-vs-code/](https://robertbasic.com/blog/build-and-run-golang-projects-in-vs-code/)
+  
+
 
 ## Environment
 
@@ -32,7 +35,8 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * Golang and VSCODE
   * Get VSCODE
   * Open the Sample in Code
-  * Config for Building and Debugging
+  * Config for Building in VSCODE
+  * Config for Debugging in VSCODE
 * Conclusion
 
 ---
@@ -206,6 +210,10 @@ To generate a tasks.json,
 ```
 
 With this configuration, you can build and run by typing **CTRL+Shift+B**.
+
+Tip
+- Change the "./hello" part in the config as the main binary file of your application.
+
  
 ### Config for Debugging in VSCODE
 
