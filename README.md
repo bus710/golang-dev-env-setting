@@ -45,9 +45,11 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 ### Get Golang
 
+```
 As of Jan 10, 2019, Go 1.12 is beta 1.  
-However, 1.12 is being expected to be official at the of the month.  
+However, 1.12 is being expected to be official at the end of the month.  
 I will update this document as it is confirmed.
+```
   
 Anyway, make a directory for the go binary first.
   
@@ -55,7 +57,7 @@ Anyway, make a directory for the go binary first.
 $ sudo mkdir -p /usr/local/go
 ```
 
-And download/extract the binaries as below.
+And download/extract the binaries as below commands.
 
 - The download link in the instruction can be different as time goes.  
 - If the link doesn't work, please check [https://golang.org/dl/](https://golang.org/dl/)
@@ -71,13 +73,14 @@ $ wget https://dl.google.com/go/go1.12beta1.linux-arm64.tar.gz
 $ sudo tar -xvf go1.12beta1.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
 ```
 
-This is it! No need to compile at all but some system variables are required.
+This is it!   
+No need to compile at all but some system variables are required.
 
 
 ### Set Golang Environment Variables
 
-To let your system know where the binaries we just installed as long as a debugger's image, we need to add the path of the binaries to PATH variable.  
-Also, 3rd-party packages' location needs to be specified as GOPATH.
+PATH variable should be set for the Go binaries and Delve's image (a debugger we will use).  
+GOPATH variable should be set for 3rd-party packages' location.
 
 Add the lines to **$HOME/.bashrc**
 
@@ -93,20 +96,34 @@ $ mkdir $HOME/golang
 $ source $HOME/.bashrc
 ```
 
-### Write a go sample code
+### Write a Sample Go Code
 
-Before to get a debugger and IDE, let's test if the basic setup works.
+Before to get Delve and IDE, let's test if the basic setup works.
+
+First, we have make a new directory for a new project.
 
 ```
 $ cd $HOME
 $ mkdir hello
 $ cd hello
+```
+
+Since Go 1.11, go modules feature is added so that we can specify a certain version of a package in a mod file so that it is a good idea to start a projct by activating the feature with the below command.
+
+```
 $ go mod init hello
+```
+
+Now, let's make a new go file and edit it.
+
+```
+$ mkdir -p cmd/hello
+$ cd cmd/hello
 $ touch main.go
 $ vi main.go
 ```
 
-Then write below code in the file.
+Then write the code below in the file.
 
 ```
 package main
@@ -121,23 +138,25 @@ func main() {
 }
 ```
 
-After the writing is done, run it in the terminal in the same directory to build and test.
+After you complete writing it, run the below commands in the same directory to build and test.
 
 ```
 $ go build
 $ ./hello
+
+Hello, world.
 ```
 
 ### Get Delve \(Golang Debugger\)
 
-Delve is the best debugger for Golang and this will be used with VSCODE.
+Delve is the best debugger for Golang development and it will also be used by VSCODE.
 
 ```
 $ go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
-The main command - **dlv** is probably located in $HOME/golang/bin.
-
+The main command - **dlv** is probably located in $HOME/golang/bin.  
+The location is already registerd to PATH so that you can just type **dlv** in a terminal to make sure you properly install it.
 
 ---
 
@@ -155,25 +174,19 @@ Just download the deb file and run the below command.
 $ sudo dpkg -i code-*.deb 
 $ rm code*
 ```
-
-### Open the Sample in VSCODE
-
-To install some required vscode extensions, run below in the terminal
-
-```
-$ cd YOUR-GOLANG-PROJECT-PATH/src
-$ code .
-```
-
-Then it will tell you to install extensions.
-
 I recommend to install extensions such as:
 
 * Go
 * Vim
 * Themes you want (zxx light and dracula in my case)
 
-:exclamation: Also on the right-bottom corner you may see a notification that ask you to install analysis tools. If you click it and click the yes button, VSCODE will install the required tools such as:  
+### Open the Sample in VSCODE
+
+Once you open a go file in VSCODE, it will show you **a message/notification** on the right-bottom corner that ask you to install analysis tools.   
+
+![](/assets/Analysis_Tools_Missing.png)
+
+If you click it and click the yes button following, VSCODE will install the required tools such as:  
 * gocode 
 * gopkgs
 * go-outline
@@ -211,8 +224,7 @@ To generate a tasks.json,
 
 With this configuration, you can build and run by typing **CTRL+Shift+B**.
 
-Tip
-- Change the "./hello" part in the config as the main binary file of your application.
+If you have a different project name, change the "./hello" part in the config as the main binary file of your application.
 
  
 ### Config for Debugging in VSCODE
