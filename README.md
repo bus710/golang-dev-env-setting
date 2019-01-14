@@ -114,11 +114,10 @@ Since Go 1.11, go modules feature is added so that we can specify a certain vers
 $ go mod init hello
 ```
 
-Now, let's make a new go file and edit it.
+Now, let's make a new go file and edit it 
+(there is a standard directory structure for Go projects but for now let's go as simple as possible)
 
 ```
-$ mkdir -p cmd/app
-$ cd cmd/app
 $ touch main.go
 $ vi main.go
 ```
@@ -141,13 +140,11 @@ func main() {
 After you complete writing it, run the below commands in the same directory to build and test.
 
 ```
-$ go build cmd/hello/main.go
+$ go build main.go
 $ ./main
 
 Hello, world.
 ```
-
-If you have an issue that saying about an import error, you may edit the first line of your go.mod file to match as where the main.go is (probably "module ./cmd/app/main.go").
 
 ### Get Delve \(Golang Debugger\)
 
@@ -214,7 +211,7 @@ To generate a tasks.json,
 	"tasks": [
 		{
 			"label": "Build and Run",
-			"command": "go build ./cmd/app/main.go && ./main",
+			"command": "go build && ./main",
 			"group": {
 				"kind": "build",
 				"isDefault": true
