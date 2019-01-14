@@ -141,11 +141,13 @@ func main() {
 After you complete writing it, run the below commands in the same directory to build and test.
 
 ```
-$ go build
+$ go build cmd/hello/main.go
 $ ./hello
 
 Hello, world.
 ```
+
+If you have an issue that saying about an import error, you may edit the first line of your go.mod file to match as where the main.go is (from "module hello" to "module ./cmd/app/main.go").
 
 ### Get Delve \(Golang Debugger\)
 
