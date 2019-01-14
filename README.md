@@ -211,7 +211,7 @@ To generate a tasks.json,
 	"tasks": [
 		{
 			"label": "Build and Run",
-			"command": "go build && ./main",
+			"command": "go build && ./hello",
 			"group": {
 				"kind": "build",
 				"isDefault": true
