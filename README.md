@@ -117,8 +117,8 @@ $ go mod init hello
 Now, let's make a new go file and edit it.
 
 ```
-$ mkdir -p cmd/hello
-$ cd cmd/hello
+$ mkdir -p cmd/app
+$ cd cmd/app
 $ touch main.go
 $ vi main.go
 ```
@@ -142,12 +142,12 @@ After you complete writing it, run the below commands in the same directory to b
 
 ```
 $ go build cmd/hello/main.go
-$ ./hello
+$ ./main
 
 Hello, world.
 ```
 
-If you have an issue that saying about an import error, you may edit the first line of your go.mod file to match as where the main.go is (from "module hello" to "module ./cmd/app/main.go").
+If you have an issue that saying about an import error, you may edit the first line of your go.mod file to match as where the main.go is (probably "module ./cmd/app/main.go").
 
 ### Get Delve \(Golang Debugger\)
 
@@ -214,7 +214,7 @@ To generate a tasks.json,
 	"tasks": [
 		{
 			"label": "Build and Run",
-			"command": "go build && ./hello",
+			"command": "go build ./cmd/app/main.go && ./main",
 			"group": {
 				"kind": "build",
 				"isDefault": true
@@ -226,8 +226,7 @@ To generate a tasks.json,
 
 With this configuration, you can build and run by typing **CTRL+Shift+B**.
 
-If you have a different project name, change the "./hello" part in the config as the main binary file of your application.
-
+If you have a different project name or location of the main.go, change the command.  
  
 ### Config for Debugging in VSCODE
 
