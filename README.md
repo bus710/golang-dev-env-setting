@@ -45,7 +45,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 ### Get Golang
 
-As a start, make a directory for the go binary first.
+As the start, make a directory for the go binary first.
   
 ```
 $ sudo mkdir -p /usr/local/go
@@ -56,15 +56,15 @@ And download/extract the binaries as below commands.
 - The download link in the instruction can be different as time goes.  
 - If the link doesn't work, please check [https://golang.org/dl/](https://golang.org/dl/)
 ```
-For x64
+// For x64
 
-$ wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz
-$ sudo tar -xvf go1.12.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
+wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz
+sudo tar -xvf go1.12.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
 
-For ARM64
+// For ARM64
 
-$ wget https://dl.google.com/go/go1.12.linux-arm64.tar.gz
-$ sudo tar -xvf go1.12.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
+wget https://dl.google.com/go/go1.12.linux-arm64.tar.gz
+sudo tar -xvf go1.12.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
 ```
 
 This is it!   
@@ -86,8 +86,8 @@ export GOPATH=$HOME/golang
 Make a directory for 3rd-party packages and update the system variables.
 
 ```
-$ mkdir $HOME/golang
-$ source $HOME/.bashrc
+mkdir $HOME/golang
+source $HOME/.bashrc
 ```
 
 ### Write a Sample Go Code
@@ -97,23 +97,23 @@ Before to get Delve and IDE, let's test if the basic setup works.
 First, we have make a new directory for a new project.
 
 ```
-$ cd $HOME
-$ mkdir hello
-$ cd hello
+cd $HOME
+mkdir hello
+cd hello
 ```
 
 Since Go 1.11, go modules feature is added so that we can specify a certain version of a package in a mod file so that it is a good idea to start a projct by activating the feature with the below command.
 
 ```
-$ go mod init hello
+go mod init hello
 ```
 
 Now, let's make a new go file and edit it 
 (there is a standard directory structure for Go projects but for now let's go as simple as possible)
 
 ```
-$ touch main.go
-$ vi main.go
+touch main.go
+vi main.go
 ```
 
 Then write the code below in the file.
@@ -134,8 +134,8 @@ func main() {
 After you complete writing it, run the below commands in the same directory to build and test.
 
 ```
-$ go build main.go
-$ ./main
+go build main.go
+./main
 
 Hello, world.
 ```
@@ -145,7 +145,7 @@ Hello, world.
 Delve is the best debugger for Golang development and it will also be used by VSCODE.
 
 ```
-$ go get -u github.com/derekparker/delve/cmd/dlv
+go get -u github.com/derekparker/delve/cmd/dlv
 ```
 
 The main command - **dlv** is probably located in $HOME/golang/bin.  
@@ -164,8 +164,8 @@ VSCODE provides myriad extension packages and visual debugging feature.
 Just download the deb file and run the below command.
 
 ```
-$ sudo dpkg -i code-*.deb 
-$ rm code*
+sudo dpkg -i code-*.deb 
+rm code*
 ```
 I recommend to install extensions such as:
 
