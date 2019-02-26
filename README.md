@@ -45,13 +45,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 ### Get Golang
 
-```
-As of Jan 10, 2019, Go 1.12 is beta 1.  
-However, 1.12 is being expected to be official at the end of the month.  
-I will update this document as it is confirmed.
-```
-  
-Anyway, make a directory for the go binary first.
+As a start, make a directory for the go binary first.
   
 ```
 $ sudo mkdir -p /usr/local/go
@@ -64,13 +58,13 @@ And download/extract the binaries as below commands.
 ```
 For x64
 
-$ wget https://dl.google.com/go/go1.12beta1.linux-amd64.tar.gz
-$ sudo tar -xvf go1.12beta1.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
+$ wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz
+$ sudo tar -xvf go1.12.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
 
 For ARM64
 
-$ wget https://dl.google.com/go/go1.12beta1.linux-arm64.tar.gz
-$ sudo tar -xvf go1.12beta1.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
+$ wget https://dl.google.com/go/go1.12.linux-arm64.tar.gz
+$ sudo tar -xvf go1.12.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
 ```
 
 This is it!   
