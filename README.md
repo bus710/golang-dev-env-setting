@@ -48,7 +48,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 As the start, make a directory for the go binary first.
   
 ```
-$ sudo mkdir -p /usr/local/go
+sudo mkdir -p /usr/local/go
 ```
 
 And download/extract the binaries as below commands.
