@@ -94,7 +94,7 @@ source $HOME/.bashrc
 
 Before to get Delve and IDE, let's test if the basic setup works.
 
-First, we have make a new directory for a new project.
+First, we have to make a new directory for a new project.
 
 ```
 cd $HOME
@@ -109,7 +109,7 @@ go mod init hello
 ```
 
 Now, let's make a new go file and edit it 
-(there is a standard directory structure for Go projects but for now let's go as simple as possible)
+(there is a standard directory structure for Go projects but for now let's go as simple as possible).
 
 ```
 touch main.go
@@ -155,7 +155,7 @@ The location is already registerd to PATH so that you can just type **dlv** in a
 
 ## 2. Golang and VSCODE
 
-VSCODE provides myriad extension packages and visual debugging feature.
+VSCODE provides myriad extensions and visual debugging feature.
 
 ### Get VSCODE
 
@@ -171,7 +171,7 @@ I recommend to install extensions such as:
 
 * Go
 * Vim
-* Themes you want (zxx light and dracula in my case)
+* Themes as you want (zxx light and dracula in my case)
 
 ### Open the Sample in VSCODE
 
@@ -249,7 +249,7 @@ To generate a launch.json,
 }
 ```
 
-With this configuration, you can debug by typing **F5**.
+With this configuration, you can debug by pressing the **F5** key.
 
 ---
 
