@@ -79,14 +79,14 @@ GOPATH variable should be set for 3rd-party packages' location.
 Add the lines to **$HOME/.bashrc**
 
 ```
-export PATH=$PATH:/usr/local/go/bin:$HOME/golang/bin
-export GOPATH=$HOME/golang
+export PATH=$PATH:/usr/local/go/bin:$HOME/go/bin
+export GOPATH=$HOME/go
 ```
 
 Make a directory for 3rd-party packages and update the system variables.
 
 ```
-mkdir $HOME/golang
+mkdir $HOME/go
 source $HOME/.bashrc
 ```
 
