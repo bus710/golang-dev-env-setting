@@ -2,9 +2,13 @@
 
 If you need/want to have Golang development environment in Linux... \(+ vscode and delve\)
 
+<br/><br/>
+
 ## Writer
 
 * SJ Kim - <bus710@gmail.com>
+
+<br/><br/>
 
 ## Referenece
 
@@ -17,13 +21,13 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 * A comprehensive guide for debugging 1 - [https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code](https://scotch.io/tutorials/debugging-go-code-with-visual-studio-code)
 * A comprehensive guide for debugging 2 - [https://robertbasic.com/blog/build-and-run-golang-projects-in-vs-code/](https://robertbasic.com/blog/build-and-run-golang-projects-in-vs-code/)
   
-
+<br/><br/>
 
 ## Environment
 
 * Mint Linux 19.1 - 64bit \(or equivalent distro\)
 
----
+<br/><br/>
 
 ## Index
 
@@ -39,11 +43,11 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
   * Config for Debugging in VSCODE
 * Conclusion
 
----
+<br/><br/>
 
 ## 1. Basic Setup
 
-### Get Golang
+### 1.1 Get Golang
 
 As the start, make a directory for the go binary first.
   
@@ -58,20 +62,21 @@ And download/extract the binaries as below commands.
 ```
 // For x64
 
-wget https://dl.google.com/go/go1.12.linux-amd64.tar.gz
-sudo tar -xvf go1.12.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
+wget https://dl.google.com/go/go1.13.linux-amd64.tar.gz
+sudo tar -xvf go1.13.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
 
 // For ARM64
 
-wget https://dl.google.com/go/go1.12.linux-arm64.tar.gz
-sudo tar -xvf go1.12.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
+wget https://dl.google.com/go/go1.13.linux-arm64.tar.gz
+sudo tar -xvf go1.13.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
 ```
 
 This is it!   
 No need to compile at all but some system variables are required.
 
+<br/><br/>
 
-### Set Golang Environment Variables
+### 1.2 Set Golang Environment Variables
 
 PATH variable should be set for the Go binaries and Delve's image (a debugger we will use).  
 GOPATH variable should be set for 3rd-party packages' location.
@@ -90,7 +95,9 @@ mkdir $HOME/go
 source $HOME/.bashrc
 ```
 
-### Write a Sample Go Code
+<br/><br/>
+
+### 1.3 Write a Sample Go Code
 
 Before to get Delve and IDE, let's test if the basic setup works.
 
@@ -140,7 +147,9 @@ go build main.go
 Hello, world.
 ```
 
-### Get Delve \(Golang Debugger\)
+<br/><br/>
+
+### 1.4 Get Delve \(Golang Debugger\)
 
 Delve is the best debugger for Golang development and it will also be used by VSCODE.
 
@@ -151,13 +160,15 @@ go get -u github.com/derekparker/delve/cmd/dlv
 The main command - **dlv** is probably located in $HOME/golang/bin.  
 The location is already registerd to PATH so that you can just type **dlv** in a terminal to make sure you properly install it.
 
----
+<br/><br/>
 
 ## 2. Golang and VSCODE
 
 VSCODE provides myriad extensions and visual debugging feature.
 
-### Get VSCODE
+<br/><br/>
+
+### 2.1 Get VSCODE
 
 [https://code.visualstudio.com/](https://code.visualstudio.com/)
 
@@ -167,13 +178,16 @@ Just download the deb file and run the below command.
 sudo dpkg -i code-*.deb 
 rm code*
 ```
+
 I recommend to install extensions such as:
 
 * Go
 * Vim
 * Themes as you want (zxx light and dracula in my case)
 
-### Open the Sample in VSCODE
+<br/><br/>
+
+### 2.2 Open the Sample in VSCODE
 
 Once you open a go file in VSCODE, it will show you **a message/notification** on the right-bottom corner that ask you to install analysis tools.   
 
@@ -185,7 +199,9 @@ If you click it and click the yes button following, VSCODE will install the requ
 * go-outline
 * ...and so on.
 
-### Config for Building in VSCODE
+<br/><br/>
+
+### 2.3 Config for Building in VSCODE
 
 To build a go package by using VSCODE, we should make a tasks.json file.
 
@@ -219,7 +235,9 @@ With this configuration, you can build and run by typing **CTRL+Shift+B**.
 
 If you have a different project name or location of the main.go, change the command.  
  
-### Config for Debugging in VSCODE
+<br/><br/>
+ 
+### 2.4 Config for Debugging in VSCODE
 
 It is almost same as above.  
 To debug a go application by using VSCODE, we should make a launch.json file.  
@@ -251,7 +269,7 @@ To generate a launch.json,
 
 With this configuration, you can debug by pressing the **F5** key.
 
----
+<br/><br/>
 
 ## Conclusion
 
