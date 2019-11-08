@@ -277,5 +277,5 @@ We just followed the simple procedure to have Golang SDK and development tools s
 
 Now you are a gopher!
 
-![](/assets/gopher10th-pin-small.jpg)
+<img src="assets/gopher10th-pin-small.jpg" width="300">
   
