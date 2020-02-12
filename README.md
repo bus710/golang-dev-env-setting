@@ -154,7 +154,7 @@ Hello, world.
 Delve is the best debugger for Golang development and it will also be used by VSCODE.
 
 ```
-go get -u github.com/derekparker/delve/cmd/dlv
+go get -u github.com/go-delve/delve/cmd/dlv
 ```
 
 The main command - **dlv** is probably located in $HOME/golang/bin.  
