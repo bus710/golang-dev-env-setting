@@ -25,7 +25,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 ## Environment
 
-* Mint Linux 19.1 - 64bit \(or equivalent distro\)
+* Ubuntu 18.4 or newer
 
 <br/><br/>
 
@@ -62,13 +62,13 @@ And download/extract the binaries as below commands.
 ```
 // For x64
 
-$ wget https://dl.google.com/go/go1.13.8.linux-amd64.tar.gz
-$ sudo tar -xvf go1.13.8.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
+$ wget https://dl.google.com/go/go1.14.linux-amd64.tar.gz
+$ sudo tar -xvf go1.14.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
 
 // For ARM64
 
-$ wget https://dl.google.com/go/go1.13.8.linux-arm64.tar.gz
-$ sudo tar -xvf go1.13.8.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
+$ wget https://dl.google.com/go/go1.14.linux-arm64.tar.gz
+$ sudo tar -xvf go1.14.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
 ```
 
 This is it!   
