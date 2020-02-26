@@ -47,6 +47,8 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 ## 1. Basic Setup
 
+<br/><br/>
+
 ### 1.1 Get Golang
 
 As the start, make a directory for the go binary first.
