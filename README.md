@@ -62,15 +62,12 @@ And download/extract the binaries as below commands.
 - The download link in the instruction can be different as time goes.  
 - If the link doesn't work, please check [https://golang.org/dl/](https://golang.org/dl/)
 ```
-// For x64
+$ VERSION="1.14.2"
+$ ARCH="amd64" // can be $ ARCH="arm64"
+$ TARGET="go${VERSION}.linux-${ARCH}.tar.gz"
 
-$ wget https://dl.google.com/go/go1.14.linux-amd64.tar.gz
-$ sudo tar -xvf go1.14.linux-amd64.tar.gz --strip-components=1 -C /usr/local/go
-
-// For ARM64
-
-$ wget https://dl.google.com/go/go1.14.linux-arm64.tar.gz
-$ sudo tar -xvf go1.14.linux-arm64.tar.gz --strip-components=1 -C /usr/local/go
+$ wget https://dl.google.com/go/${TARGET}
+$ sudo tar -xvf ${TARGET} --strip-components=1 -C /usr/local/go
 ```
 
 This is it!   
