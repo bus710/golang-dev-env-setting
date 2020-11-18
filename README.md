@@ -25,7 +25,7 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 ## Environment
 
-* Ubuntu 18.4 or newer
+* Ubuntu 20.04 or newer
 
 <br/><br/>
 
@@ -57,17 +57,14 @@ As the start, make a directory for the go binary first.
 $ sudo mkdir -p /usr/local/go
 ```
 
-And download/extract the binaries as below commands.
-
-- The download link in the instruction can be different as time goes.  
+And download/extract the binaries as below commands:
+- The download link in the instruction can be different as time goes and target platform  
 - If the link doesn't work, please check [https://golang.org/dl/](https://golang.org/dl/)
-```
-$ VERSION="1.14.2"
-$ ARCH="amd64" // can be $ ARCH="arm64"
-$ TARGET="go${VERSION}.linux-${ARCH}.tar.gz"
 
-$ wget https://dl.google.com/go/${TARGET}
-$ sudo tar -xvf ${TARGET} --strip-components=1 -C /usr/local/go
+```
+$ wget https://golang.org/dl/go1.15.5.linux-amd64.tar.gz
+$ sudo tar -xvf https://golang.org/dl/go1.15.5.linux-amd64.tar.gz \
+	--strip-components=1 -C /usr/local/go
 ```
 
 This is it!   
@@ -108,10 +105,10 @@ $ mkdir hello
 $ cd hello
 ```
 
-Since Go 1.11, go modules feature is added so that we can specify a certain version of a package in a mod file so that it is a good idea to start a projct by activating the feature with the below command.
+Since Go 1.11, go modules feature is added so that we can specify a certain version of a package in a mod file so that it is a good idea to start a project by activating the feature with the below command.
 
 ```
-$ go mod init hello
+$ go mod init main
 ```
 
 Now, let's make a new go file and edit it 
