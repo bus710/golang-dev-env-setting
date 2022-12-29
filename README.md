@@ -4,12 +4,6 @@ If you need/want to have Golang development environment in Linux... \(+ vscode a
 
 <br/><br/>
 
-## Writer
-
-* SJ Kim - <bus710@gmail.com>
-
-<br/><br/>
-
 ## Referenece
 
 * Golang Installation - [https://golang.org/doc/install](https://golang.org/doc/install)
